@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{{url_for('static',filename = 'picture/logo6.png')}}">
+<title> Doctor </title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/ulogin.css') }}">
+
+<link rel="stylesheet"  href="ulogin.css" >
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/lresponsive.css') }}" media="screen and (max-width:900px)">
+
+
+
+<style>
+
+
+
+@media only screen (max-width:900px) {
+
+
+  
+}
+
+</style>
+</head>
+
+
+
+
+<body style="background-color:#F5FCFF;">
+
+
+
+<div  class="div" style="background-image: url({{ url_for('static',filename = '/picture/landscape.jfif')}});">
+
+ <p id="register">Login</p>
+ <p> Enter Email Id and password below </p>
+ <form method="post" action="/login_validation" style="line-height:3em;" >
+  <label class="label" for="fname">Email Id </label>
+  <input type="email" id="fname" name="email" placeholder="abc@gmail.com"  value="" size="25"> <br>
+  <label class="label" for="lname">Password </label> 
+  <input type="password" id="lname" name="password" placeholder="password" value="" size="30"> <br>
+   <input type="submit" onclick=(call())></input> <br>
+ <input type="reset" ></input>
+  <p> Creat new account <a href="/register" >Register </a> </p> 
+  
+  
+  
+</form>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+
+  function call()
+  {
+  
+  window.alert("Congragulations! You Login  Sucessfully ");
+  
+  }
+  
+  </script>
+
+
+</body>
+
+</html>

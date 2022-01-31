@@ -1,0 +1,84 @@
+.your_doctor{
+    text-shadow: 2px 2px red ;
+    color:#63C5DA;
+    margin-top:50px;
+    margin-left:20px;
+    margin-bottom: 30px;
+    float: center;
+    font-size:30px;
+    
+    }
+
+    div.header img {
+     margin-left: 0px;
+     margin-right: 25px;
+        width: 30%;
+    }
+
+    .example{
+        padding: 14px;
+        margin:0px;
+    }
+    li:hover{
+        border:0px solid #4682B4 ;
+        }
+
+
+    div.header ul li {
+
+
+        display: none;
+    }
+
+    .div{
+        padding: 100px;
+        padding-left:0px;
+        height:140px;
+        margin-top:15px;
+        background-size:100% 100%;
+        
+        }
+        .search {
+            float:left;
+            margin-left:2px;
+            height : 50px;
+            line-height:1em;
+            }
+            
+            div.gallery {
+    
+                margin: 5px;
+                float:left;
+                width: 100%;
+                border:2px solid #ccc ;
+                
+                }
+
+                div.gallery img {
+                    width: 95%;
+                   height: auto;
+                  }
+
+                  div.gallery:hover {
+                    border: 2px solid #777;
+                    }
+
+
+                    .column {
+                        float: left;
+                        width: 100%;
+                        padding: 10px;
+                      
+                      }
+                      
+            
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+
+
+
+
+                  
