@@ -7,15 +7,14 @@ app = Flask(__name__)
 app.secret_key=os.urandom(24)
 
 
-connection=mysql.connector.connect(host="localhost",user="rehan",password="letmein1",database="login",port="3306",auth_plugin='mysql_native_password' )
+connection=mysql.connector.connect(host="localhost",user="",password="",database="",port="",auth_plugin='mysql_native_password' )
 mycursor=connection.cursor()
 
 @app.route("/home")
 def home():
     if 'user_id' in session:
         return render_template('uhome.html')
-    else:
-        return redirect('/')
+    else:return redirect('/')
 
     
 
